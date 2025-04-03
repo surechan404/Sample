@@ -1,0 +1,188 @@
+.maindiv{
+background-color:#FFFFFF;
+margin:32px 24px 15px 24px;
+padding:32px 32px;
+background-image: url("iron-man-extreme-glfhd29kbvzg00e3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  filter: blur(0.3px);
+}
+
+
+/* .bg-image { */
+   /* background-image: url('iron-man-extreme-glfhd29kbvzg00e3.jpg');
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+
+  /* The image used */
+  /* background-image: url("iron-man-extreme-glfhd29kbvzg00e3.jpg"); */
+
+  /* Add the blur effect */
+   /* filter: blur(8px);
+  -webkit-filter: blur(8px);  */
+
+  /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+/* } */
+
+#master_reset{
+	background-color:#004b70;
+	font-size:17px;
+color: white;
+}
+
+#small{
+font-size:10px;
+}
+
+select{
+  background-color: #004b7073;
+      padding: 0px 2px 1px 8px;
+      border:1px solid #a4aab0;
+color: white;
+-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+textarea{
+  /* background-color: #00527a73; */
+  background-color: #004b7073;
+border-width:4px;
+border:1px solid #a4aab0;
+color: white;
+-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+body{
+font-weight: bold;
+font-size:16px;
+color:#f1f1f1;
+background-color:#e6e8ea;
+border-radius: 2px;
+background-clip: border-box;
+font-family:"Segoe UI";
+}
+
+button {
+  background-color:#56928f;
+  border: 2px solid #ffffff;
+  font-weight:bold;
+  color: #f1f1f1;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+border: 0.25px  ;
+box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+border-radius: 12px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+input:not([type="image" i]) {
+  box-sizing: border-box;
+  background-color: #004b7073;
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    border:1px solid #a4aab0;
+}
+
+#ms_center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #8baebe; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 6px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 21px; /* Increase font size */
+  transparent: 25%;
+}
+
+#myBtn:hover {
+  background-color: #69a8c5; /* Add a dark-grey background on hover */
+}
+center{
+
+  display: block;
+  text-align: -webkit-center;
+  unicode-bidi: isolate;
+  /* background-color: cadetblue; */
+  background-color: rgba(26, 21, 21, 0);
+   backdrop-filter: blur(10px);
+}
+#creator{
+  /* color:#066591; */
+  color:#494949;
+  background-color: rgba(26, 21, 21, 0);
+  font-size: 14px;
+}
+#creatorname{
+  color:  #464646;
+  background-color: rgba(26, 21, 21, 0);
+  backdrop-filter: blur(89px);
+  font-family: 'Lucida Calligraphy';
+  font-size: 20px;
+}

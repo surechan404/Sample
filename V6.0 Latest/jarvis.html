@@ -1,0 +1,211 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>Jarvis</title>
+<link rel="shortcut icon" href="arc-reactor3.png" type="image/x-icon">
+</head>
+<body>
+<div class="maindiv">
+<div class="div1">
+
+
+
+<!--<button class="accordion">Section 1</button>
+<div class="panel"> -->
+<hr>
+
+
+
+
+
+
+<center>1. BLANKSPACE TRIMMER </center>
+<hr><br>
+Text to Trim:
+<br>
+<textarea name="ta1" id="ta1" rows="10" cols="80" placeholder="Eg. Content with blank spaces ==>  Contentwithblankspaces / Content_with_blank_spaces "></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;<span id = "small">Replace with</span>
+<label for="replacement"></label>
+<select id="replacement_id" name="replace_nm">
+  <option value="0">Blankspace</option>
+  <option value="1">Underscore</option>
+    <option value="2">Comma</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="trimmer()" id="rip">Trim it</button>
+<br><br>
+
+
+Trimmed text:
+<br>
+<textarea readonly name="ta2" id="ta2" rows="12" cols="80"></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="copytocb()" id="copycb">Copy to Clipboard</button>
+&nbsp;&nbsp;
+<button type="button" onclick="reset()" id="clearall">Reset</button>
+</div>
+<br><br><br>
+
+<!--<button class="accordion">Section 1</button>
+<div class="panel"> -->
+<hr>
+<center>2. COMMA SEPARATOR </center>
+<hr><br>
+Text to Trim:
+<br>
+<textarea name="input_lineseparator" id="inp_ls" rows="10" cols="80" placeholder="Eg. Sunday,Monday,Tuesday ==> Sunday <br> Monday <br> Tuesday"></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="ls()" id="separate">Separate</button>
+<br><br>
+
+
+Separated Text:
+<br>
+<textarea readonly name="separatedtd_linesep" id="septd_ls" rows="12" cols="80"></textarea>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button type="button" onclick="copytocb1()" id="copycb1">Copy to Clipboard</button>
+&nbsp;&nbsp;
+<button type="button" onclick="reset1()" id="clearall1">Reset</button>
+
+<br><br><br>
+
+<hr>
+<center>3. TEXT REPEATER </center>
+<hr><br>
+Text to Repeat:
+<br>
+<textarea name="input_txtrepeater" id="inp_tr" rows="3" cols="30" placeholder="Eg. 'a'"></textarea>
+
+<br><br>
+Count:<br>
+<input name="input_count" id="inp_count"  placeholder="Eg. 200"></input>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="repeat()" id="repeater">Repeat</button>
+<br><br>
+Repeated Text:
+<br>
+<textarea readonly name="repeated_text" id="repeated_txt" rows="12" cols="80"></textarea>
+&nbsp;&nbsp;&nbsp;
+
+<button type="button" onclick="copytocb2()" id="copycb2">Copy to Clipboard</button>
+&nbsp;&nbsp;
+<button type="button" onclick="reset2()" id="clearall2">Reset</button>
+
+<br><br><br><br>
+<hr>
+<center>4. CHARACTER COUNTER </center>
+<hr><br>
+Text to count:
+<br>
+<textarea name="counter_input" id="counter_input" rows="10" cols="80" placeholder="Enter content.. "></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="countChars()" id="counter">Count</button>
+<br><br>
+
+
+No.of chars: 
+<br>
+<textarea readonly name="counter_output" id="counter_output" rows="3" cols="30"></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="reset3()" id="clearall3">Reset</button>
+<br><br><br><br>
+<hr>
+<center>5. CODE FORMATTER </center>
+<hr><br>
+Code to format:
+<br>
+<textarea name="format_input" id="format_input" rows="10" cols="80" placeholder="Enter code.. "></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="codeFormatter()" id="codeFormatter">Format Code</button>
+<br><br>
+
+
+Formatted code:
+<br>
+<textarea readonly name="format_output" id="format_output" rows="15" cols="80"></textarea>
+&nbsp;&nbsp;&nbsp;
+
+<button type="button" onclick="copytocb3()" id="copycb3">Copy to Clipboard</button>
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="reset4()" id="clearall4">Reset</button>
+
+
+<br><br><br>
+
+<hr>
+<center>6. CASE FORMATTER </center>
+<hr><br>
+Text to Format:
+<br>
+<textarea name="input_caseformat" id="inp_caseFormatter" rows="10" cols="80" placeholder="Eg. 'Input Text to change case'"></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="caseChange"></label>
+<select id="caseCode" name="caseCode">
+  <option value="0">Upper case</option>
+  <option value="1">Lower case</option>
+  <option value="2">Alternate</option>
+
+  <!--<option value="2">Alternate</option>-->
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+  
+<button type="button" onclick="caseFormatter()" id="csFormatter">Format the text</button>
+<br><br>
+Formatted Text:
+<br>
+<textarea readonly name="caseFormatted_text" id="caseFormatted_txt" rows="12" cols="80"></textarea>
+&nbsp;&nbsp;&nbsp;
+
+<button type="button" onclick="copytocb5()" id="copycb5">Copy to Clipboard</button>
+&nbsp;&nbsp;
+<button type="button" onclick="reset5()" id="clearall5">Reset</button>
+
+
+
+
+<button type="button" onclick="topFunction()" id="myBtn" title="Go to top">
+<img src="top.png" alt="Go to Top" width="50" id ="img_top" height="50"></button>
+
+<br><br><br><br>
+<hr>
+<center>7. COLUMN FINDER </center>
+<hr><br>
+Column Name:
+<br>
+<textarea name="col_nm" id="col_input" rows="4" cols="30" placeholder="Enter Column Name (upto 'ABZ').."></textarea>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" onclick="columnNmFinder()" id="columnFinder">Find Column number</button>
+<br><br>
+
+
+Column number:
+<br>
+<textarea readonly name="col_output" id="col_output" rows="4" cols="30"></textarea>
+&nbsp;&nbsp;&nbsp;
+
+
+
+
+<br><br><br><br>
+<center><button type="button" onclick="masterReset()" id="master_reset">Master Reset</button></center>
+
+</div>
+
+<br>
+
+  <span id="creator" >Designed & Scripted by Suresh Chander R</span>
+  <br><br>
+</div>
+
+
+
+
+
+</body>
+</html>	
